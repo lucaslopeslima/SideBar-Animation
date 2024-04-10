@@ -1,0 +1,36 @@
+.sideBar__animation{
+    height: 100%;
+    width: 300px;
+    //background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a{
+        //border: 1px solid red;
+        background-color: $color-white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $color-gray;
+        font-size: 2rem;
+        &:nth-of-type(1){
+            border-top-left-radius: 14px;
+        }
+        &:last-of-type{
+            border-bottom-left-radius: 14px;
+        }
+    }    
+    .sideBar__animation-active{        
+        color: black;
+        background-color: $color-gray;
+    }
+    .previous-element{
+        border-bottom-right-radius: $border-radios;
+    }
+    .next-element{
+        border-top-right-radius: $border-radios;
+    }
+}
+
